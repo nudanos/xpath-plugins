@@ -1,5 +1,5 @@
-_build/src/*.so lib/xpath/plugins/
-interface-leafref-plugin/*.ini lib/xpath/plugins
-qos-profile-validation-plugin/*.ini lib/xpath/plugins
-siad-link-speed-plugin/*.ini lib/xpath/plugins
-vif-interface-plugin/*.ini lib/xpath/plugins
+_build/src/*.so usr/lib/xpath/plugins/
+interface-leafref-plugin/*.ini usr/lib/xpath/plugins
+qos-profile-validation-plugin/*.ini usr/lib/xpath/plugins
+siad-link-speed-plugin/*.ini usr/lib/xpath/plugins
+vif-interface-plugin/*.ini usr/lib/xpath/plugins

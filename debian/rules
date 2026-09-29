@@ -1,4 +1,5 @@
 #!/usr/bin/make -f
+export GO111MODULE := off
 
 export DH_GOPKG := github.com/danos/xpath-plugins
 
@@ -18,7 +19,7 @@ BUILD_ARGS_GO := -trimpath -v
 GOCOVER=$(if $(shell go doc cmd/cover >/dev/null 2>&1 && echo true),-cover,)
 
 %:
-	dh $@ --with systemd,golang --buildsystem=golang --builddirectory=$(GOBUILDDIR)
+	dh $@ --with golang --buildsystem=golang --builddirectory=$(GOBUILDDIR)
 
 # AFAICT, each separate plugin needs a 'GOPATH ... go build ...' entry here.
 override_dh_auto_build: vet

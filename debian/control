@@ -1,13 +1,15 @@
 Source: golang-xpath-plugins
-Section: contrib/net
-Priority: extra
-Maintainer: Vyatta Package Maintainers <DL-vyatta-help@att.com>
-Build-Depends:
- debhelper (>= 9.20160709),
+Section: net
+Priority: optional
+Maintainer: NuDanOS Maintainers <jon@fernandez.tech>
+Build-Depends: debhelper-compat (= 13),
  dh-golang (>= 1.18),
  golang (>= 1.10),
  golang-github-danos-yang-dev
-Standards-Version: 3.9.8
+Standards-Version: 4.7.2
+Rules-Requires-Root: no
+Vcs-Git: https://github.com/nudanos/xpath-plugins.git
+Vcs-Browser: https://github.com/nudanos/xpath-plugins
 
 Package: golang-xpath-plugins
 Architecture: any
